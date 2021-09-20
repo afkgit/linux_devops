@@ -22,7 +22,7 @@ Authentication mechanism:
 2) authorization keys
 The ssh-key command generates two keys
 
-id_rsa
+id_rsa,
 id_rsa.pub
 
 here id_rsa is the private key and id_rsa.pub is the public key.
