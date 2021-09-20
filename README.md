@@ -31,3 +31,4 @@ The private key will remain on the local machine and public key will be sent to 
 (Never share your private key with anyone)
 ssh-copy-id user@ip
 The key gets copied at ~/.ssh/authorized_keys on the remote. 
+the key pair is unique for a user, Example if you generate these keys as the root user, only this user can authenticate using this key pair and for a different user another set of keys needs to be generated
