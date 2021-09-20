@@ -1,13 +1,13 @@
 # linux_devops
 Linux basic concepts and cmnds
-# SSH CONCEPTS
+### SSH CONCEPTS
 
 SSH is Secure Shell 
 
 It is a protocol which allows two servers to communicate with one another over a secure network.
 Data is encrypted in SSH and hence it is very secure network transfer protocol widely used.
 
-# HOW SSH WORKS
+## HOW SSH WORKS
 
 The three main components for SSH are
 1) remote server
