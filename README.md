@@ -32,3 +32,30 @@ The private key will remain on the local machine and public key will be sent to 
 ssh-copy-id user@ip
 The key gets copied at ~/.ssh/authorized_keys on the remote. 
 the key pair is unique for a user, Example if you generate these keys as the root user, only this user can authenticate using this key pair and for a different user another set of keys needs to be generated
+
+**Commnads for ssh **
+
+Create 2 instances on AWS. Name one instance as Client ans the other one as server
+
+Now have to open an SSH connection from the client m/c to server m/c
+
+**on server m/c**
+ 
+1)  vim /etc/ssh/sshd_config
+    pwd authentication set to yes
+2) useradd user1
+3) passwd user1
+
+**On client m/c as root**
+useradd user
+passwd user1
+ 
+** on client m/c as user1**
+ su - user1
+
+1)  ssh-keygen
+2) ssh-copy-id -i user1@ipofserver
+
+
+
+
