@@ -20,4 +20,14 @@ Client = should have ssh running and it can be win/mac/linux
 Authentication mechanism:
 1) password
 2) authorization keys
+The ssh-key command generates two keys
 
+id_rsa
+id_rsa.pub
+
+here id_rsa is the private key and id_rsa.pub is the public key.
+
+The private key will remain on the local machine and public key will be sent to the server
+(Never share your private key with anyone)
+ssh-copy-id user@ip
+The key gets copied at ~/.ssh/authorized_keys on the remote. 
