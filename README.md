@@ -10,16 +10,16 @@ Data is encrypted in SSH and hence it is very secure network transfer protocol w
 # HOW SSH WORKS
 
 The three main components for SSH are
-1) remote server
-2) Local machine
-3) Authentication mechanism
+- remote server
+- Local machine
+- Authentication mechanism
 
 Remote server = this system should have ssh running it can be win/mac/linux
 Client = should have ssh running and it can be win/mac/linux
 
 Authentication mechanism:
-1) password
-2) authorization keys
+- password
+- authorization keys
 The ssh-key command generates two keys
 
 id_rsa,
@@ -39,18 +39,18 @@ Create 2 instances on AWS. Name one instance as Client ans the other one as serv
 
 Now have to open an SSH connection from the client m/c to server m/c
 
-## on server m/c
+### on server m/c
  
 1)  vim /etc/ssh/sshd_config
     pwd authentication set to yes
 2) useradd user1
 3) passwd user1
 
-## On client m/c as root
+### On client m/c as root
 useradd user
 passwd user1
  
-** on client m/c as user1**
+### on client m/c as user1
  su - user1
 
 1)  ssh-keygen
