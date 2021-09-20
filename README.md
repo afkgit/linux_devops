@@ -1,13 +1,13 @@
 # linux_devops
 Linux basic concepts and cmnds
-### SSH CONCEPTS
+# SSH CONCEPTS
 
 SSH is Secure Shell 
 
 It is a protocol which allows two servers to communicate with one another over a secure network.
 Data is encrypted in SSH and hence it is very secure network transfer protocol widely used.
 
-## HOW SSH WORKS
+# HOW SSH WORKS
 
 The three main components for SSH are
 1) remote server
@@ -33,20 +33,20 @@ ssh-copy-id user@ip
 The key gets copied at ~/.ssh/authorized_keys on the remote. 
 the key pair is unique for a user, Example if you generate these keys as the root user, only this user can authenticate using this key pair and for a different user another set of keys needs to be generated
 
-**Commnads for ssh **
+## Commnads for ssh 
 
 Create 2 instances on AWS. Name one instance as Client ans the other one as server
 
 Now have to open an SSH connection from the client m/c to server m/c
 
-**on server m/c**
+## on server m/c
  
 1)  vim /etc/ssh/sshd_config
     pwd authentication set to yes
 2) useradd user1
 3) passwd user1
 
-**On client m/c as root**
+## On client m/c as root
 useradd user
 passwd user1
  
