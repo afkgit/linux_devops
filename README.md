@@ -1,4 +1,4 @@
-# linux_devops
+# Linux_devops
 Linux basic concepts and cmnds
 # SSH CONCEPTS
 
